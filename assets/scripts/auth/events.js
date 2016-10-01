@@ -6,6 +6,7 @@ const ui = require('./ui');
 
 const onSignUp = function (event) {
   event.preventDefault();
+  console.log("button works");
   let data = getFormFields(event.target);
   api.signUp(data)
     .done (ui.signUpSuccess)
@@ -22,8 +23,8 @@ const onSignIn = function (event) {
 
 const onSignOut = function () {
   event.preventDefault();
-  $('header').show();
-  $('.container').hide();
+  $('.entry-screen').toggle();
+  $('.user-page').toggle();
   api.signOut()
     .done (ui.signOutSuccess)
     .fail ();
@@ -38,10 +39,10 @@ const onChangePassword = function (event) {
 };
 
 const addHandlers = () => {
-  $('#sign-up').on('submit', onSignUp);
-  $('#sign-in').on('submit', onSignIn);
-  $('#sign-out').on('click', onSignOut);
-  $('#change-pwd').on('submit', onChangePassword);
+  $('#sign-up-form').on('submit', onSignUp);
+  $('#sign-in-form').on('submit', onSignIn);
+  $('#change-pwd-form').on('submit', onChangePassword);
+  $('#log-out').on('click', onSignOut);
 };
 
 module.exports = {

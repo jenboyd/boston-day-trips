@@ -2,14 +2,78 @@
 <html>
     <head>
       <title>Boston Day Trips</title>
-
       <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body class="container">
-      <h1>Boston Day Trips</h1>
+    <body>
+      <div class="entry-screen">
+        <header>
+          <h1>Boston Day Trips</h1>
+        </header>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor
+             sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </section>
+        <section>
+          <div class="log-in">
+            <h3>Create an Account</h3>
+            <form id="sign-up-form">
+              <fieldset>
+                <input type="email" name="credentials[email]" placeholder="Enter your email">
+                <input type="password" name="credentials[password]" placeholder="Enter your password">
+                <input type="password" name="credentials[password]" placeholder="Confirm password">
+                <input type="submit" name="submit" value="Submit">
+              </fieldset>
+            </form>
+            <h3>Have an account, Sign in</h3>
+            <form id="sign-in-form">
+              <fieldset>
+                <input type="email" name="credentials[email]" placeholder="Enter your email">
+                <input type="password" name="credentials[password]" placeholder="Enter your password">
+                <input type="submit" name="submit" value="Submit">
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <footer>
+          <p>
+            Made as General Assembly's WDI Full Stack App Project
+          </p>
+        </footer>
+      </div>
 
+      <div class="user-page">
+        <div class="user-header">
+          <h2>Boston Day Trips</h2>
+        </div>
 
+        <div class="container">
+          <!-- Handlebars templates -->
+        </div>
 
+        <div class="user-footer">
+          <div class="change-password">
+            <h3>Change Password</h3>
+            <form id="change-pwd-form">
+              <fieldset>
+                <input type="password" name="passwords[old]" placeholder="Enter your password">
+                <input type="password" name="passwords[new]" placeholder="Enter your password">
+                <input type="submit" name="submit" value="Submit">
+              </fieldset>
+            </form>
+          </div>
+          <div class="log-out">
+            <button type="submit" id="log-out">Log Out</button>
+          </div>
+        </div>
+      </div>
     </body>
 </html>

@@ -2,18 +2,22 @@
 
 const app = require ('../app');
 
+
 const signUpSuccess = (data) => {
   app.user = data.user;
-
+  console.log(data);
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
-
+  console.log(data);
+  $('.entry-screen').toggle();
+  $('.user-page').toggle();
 };
 
 const signOutSuccess = () => {
   app.user = null;
+
 
 };
 
