@@ -1,6 +1,7 @@
 'use strict';
 
 const app = require ('../app');
+const loadUserInfo = require ('../../templates/user-info.handlebars');
 
 
 const signUpSuccess = (data) => {
@@ -13,12 +14,11 @@ const signInSuccess = (data) => {
   console.log(data);
   $('.entry-screen').toggle();
   $('.user-page').toggle();
+  $('.container').html(loadUserInfo(data));
 };
 
 const signOutSuccess = () => {
   app.user = null;
-
-
 };
 
 const changePasswordSuccess = () => {
