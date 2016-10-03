@@ -27,18 +27,18 @@
             <h3>Create an Account</h3>
             <form id="sign-up-form">
               <fieldset>
-                <input type="email" name="credentials[email]" placeholder="Enter your email">
-                <input type="password" name="credentials[password]" placeholder="Enter your password">
-                <input type="password" name="credentials[password]" placeholder="Confirm password">
-                <input type="submit" name="submit" value="Submit">
+                <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
+                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
+                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Confirm password">
+                <input type="submit" class="log-in-format" name="submit" value="Submit">
               </fieldset>
             </form>
             <h3>Have an account, Sign in</h3>
             <form id="sign-in-form">
               <fieldset>
-                <input type="email" name="credentials[email]" placeholder="Enter your email">
-                <input type="password" name="credentials[password]" placeholder="Enter your password">
-                <input type="submit" name="submit" value="Submit">
+                <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
+                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
+                <input type="submit" class="log-in-format" name="submit" value="Submit">
               </fieldset>
             </form>
           </div>
@@ -51,29 +51,46 @@
       </div>
 
       <div class="user-page">
+        <div class="user-nav">
+          <div class="user-info">
+          <!-- Handlebars templates -->
+          </div>
+          <button type="submit" class="nav-buttons" id="log-out">LOG OUT</button>
+        </div>
         <div class="user-header">
           <h2>Boston Day Trips</h2>
         </div>
 
         <div class="container">
           <!-- Handlebars templates -->
+          
         </div>
 
-        <div class="user-footer">
-          <div class="change-password">
-            <h3>Change Password</h3>
-            <form id="change-pwd-form">
-              <fieldset>
-                <input type="password" name="passwords[old]" placeholder="Enter your password">
-                <input type="password" name="passwords[new]" placeholder="Enter your password">
-                <input type="submit" name="submit" value="Submit">
-              </fieldset>
-            </form>
-          </div>
-          <div class="log-out">
-            <button type="submit" id="log-out">Log Out</button>
-          </div>
+        <div class="single-trip-page">
+          <!-- Handlebars templates -->
+          <form id="create-comment">
+            <fieldset>
+              <input type="text" class="new-comment" name="comment[comments]" placeholder="Enter your comment">
+              <input type="text" class="comment-trip-id" name="comment[trip_id]" placeholder="Trip ID">
+              <input type="submit" class="add-margin" name="submit" value="Submit">
+            </fieldset>
+          </form>
         </div>
+
+        <button type="submit" id="find-trip">FIND A TRIP</button>
+        <button type="submit" id="my-comments">TRIP COMMENTS</button>
+        <button type="submit" id="change-pwd">CHANGE PASSWORD</button>
+
+        <div class="change-password">
+          <form id="change-pwd-form">
+            <fieldset>
+              <input type="password" class="change-pwd-format" name="passwords[old]" placeholder="Enter your old password">
+              <input type="password" class="change-pwd-format" name="passwords[new]" placeholder="Enter your new password">
+              <input type="submit" class="change-pwd-format" name="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+
       </div>
     </body>
 </html>

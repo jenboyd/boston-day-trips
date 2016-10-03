@@ -8,7 +8,12 @@ require('./example');
 
 
 const authEvents = require('./auth/events.js');
+const commentEvents = require('./comments/events.js');
+const tripEvents = require('./trips/events.js');
+
 
 $(() => {
   authEvents.addHandlers();
+  commentEvents.addHandlers();
+  tripEvents.addHandlers();
 });
