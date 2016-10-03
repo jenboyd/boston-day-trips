@@ -63,15 +63,28 @@
 
         <div class="container">
           <!-- Handlebars templates -->
-          
+        </div>
+
+        <div class="edit-comment-page">
+          <h4>Edit your comment on this trip</h4>
+          <form id="edit-comment">
+            <fieldset>
+              <input type="text" class="comment-input" name="comment[comments]"
+                    placeholder="type here">
+              <input type="text" class="comment-trip-id" name="comment[trip_id]"
+                    placeholder="Trip ID">
+              <input type="submit" class="add-margin" name="submit" value="Submit">
+            </fieldset>
+          </form>
         </div>
 
         <div class="single-trip-page">
-          <!-- Handlebars templates -->
           <form id="create-comment">
             <fieldset>
-              <input type="text" class="new-comment" name="comment[comments]" placeholder="Enter your comment">
-              <input type="text" class="comment-trip-id" name="comment[trip_id]" placeholder="Trip ID">
+              <input type="text" class="comment-input" name="comment[comments]"
+                    placeholder="Enter your comment">
+              <input type="text" class="comment-trip-id" name="comment[trip_id]"
+                    placeholder="Trip ID">
               <input type="submit" class="add-margin" name="submit" value="Submit">
             </fieldset>
           </form>

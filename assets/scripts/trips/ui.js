@@ -22,14 +22,12 @@ const onGetSingleTrip = function (event) {
     .fail (failure);
 };
 
-
 const getTripsSuccess = (data) => {
   console.log(data);
   $('.container').html(loadTrips(data));
   $('.single-trip-page').hide();
   $('.trip').on('click', onGetSingleTrip);
 };
-
 
 module.exports = {
   getTripsSuccess,

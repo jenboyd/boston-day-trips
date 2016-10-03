@@ -1,9 +1,12 @@
 
   {{#each comments}}
-    <div class="comment" data-id={{id}}>
-      <h4>{{trip.name}}</h4>
-      <p>"{{comments}}"</p>
-      <button type="click" id="delete-comment" data-id={{id}}>X</button>
-      <button type="click" id="edit-comment" data-id={{id}}>edit</button>
+    <div class="comment-module">
+        <div class="comment" data-id={{id}}>
+          <h4>{{trip.name}}</h4>
+          <p>"{{comments}}"</p>
+          <p>"{{user.email}}"</p>
+        </div>
+        <button type="click" class:"block" id="delete-comment" data-id={{id}}>X</button>
+        <button type="click" class:"block" id="get-single-comment" data-id={{id}}>edit</button>
     </div>
   {{/each}}

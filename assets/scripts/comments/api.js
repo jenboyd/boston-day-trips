@@ -14,8 +14,6 @@ const createComment = function(data) {
   });
 };
 
-
-
 const getComments = function() {
   return $.ajax({
     url: app.host + '/comments',
@@ -26,19 +24,24 @@ const getComments = function() {
   });
 };
 
-const updateComment = function (comments, trip_id) {
+const getSingleComment = function(commentId) {
+  return $.ajax({
+    url: app.host + '/comments/' + commentId,
+    headers: {
+      Authorization: 'Token token=' + app.user.token,
+    },
+    method: 'GET',
+  });
+};
+
+const updateComment = function (data) {
   return $.ajax({
       method: 'PATCH',
-      url: app.host + '/comments/' + app.comment.id,
+      url: app.host + '/comments/' + $('.comment-to-edit').data('id'),
       headers: {
       Authorization: 'Token token=' + app.user.token,
       },
-      data: {
-           "game": {
-              "comments": comments,
-              "trip_id" : trip_id,
-            },
-      }
+      data: data,
     });
   };
 
@@ -56,6 +59,7 @@ const updateComment = function (comments, trip_id) {
 module.exports = {
   createComment,
   getComments,
+  getSingleComment,
   updateComment,
   deleteComment,
 };

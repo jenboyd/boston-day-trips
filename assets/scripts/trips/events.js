@@ -11,10 +11,8 @@ const onGetTrips = function (event) {
     .fail (ui.failure);
 };
 
-
 const addHandlers = () => {
   $('#find-trip').on('click', onGetTrips);
-
 };
 
 module.exports = {

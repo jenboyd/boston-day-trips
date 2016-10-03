@@ -2,6 +2,7 @@
 
 const app = require ('../app');
 const loadComments = require ('../../templates/comments.handlebars');
+const loadSingleComment = require ('../../templates/edit-comment.handlebars');
 
 
 const createCommentSuccess = (data) => {
@@ -16,12 +17,15 @@ const getCommentsSuccess = (data) => {
   $('.single-trip-page').hide();
 };
 
-
-const updateCommentSuccess = (data) => {
-  app.comment = data.comment;
+const getSingleCommentSuccess = (data) => {
   console.log(data);
+  $('.edit-comment-page').show();
+  $('.container').html(loadSingleComment(data));
 };
 
+const updateCommentSuccess = (data) => {
+  console.log(data);
+};
 
 const deleteCommentSuccess = () => {
   console.log("DELETE SUCCESS");
@@ -34,6 +38,7 @@ const failure = (error) => {
 module.exports = {
   createCommentSuccess,
   getCommentsSuccess,
+  getSingleCommentSuccess,
   updateCommentSuccess,
   deleteCommentSuccess,
   failure,
