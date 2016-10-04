@@ -1,7 +1,33 @@
 <div class="trip-page">
-  <h2>{{trip.name}}</h2>
-  <p>{{trip.location}}</p>
-  <p>Find More Info Here:{{url}}</p>
-  <img src="{{trip.photo}}" alt="trip-photo" />
-  <p>{{trip.comment.comments}}</p>
+  <img src="{{trip.description}}" alt="trip-photo" />
+  <div class="trip-info">
+    <h3>{{trip.name}}</h3>
+    <p>{{trip.location}}</p>
+    <div class="filters">
+      {{#if trip.spring}}
+        <span class="spring">spring</span>
+      {{/if}}
+      {{#if trip.summer}}
+        <span class="summer">summer</span>
+      {{/if}}
+      {{#if trip.fall}}
+        <span class="fall">fall</span>
+      {{/if}}
+      {{#if trip.winter}}
+        <span class="winter">winter</span>
+      {{/if}}
+      {{#if trip.artsy}}
+        <span class="artsy">artsy</span>
+      {{/if}}
+      {{#if trip.boozy}}
+        <span class="boozy">boozy</span>
+      {{/if}}
+      {{#if trip.foodie}}
+        <span class="foodie">foodie</span>
+      {{/if}}
+      {{#if trip.outdoorsy}}
+        <span class="outdoorsy">outdoorsy</span>
+      {{/if}}
+  </div>
+  </div>
 </div>

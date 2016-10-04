@@ -50,7 +50,6 @@ const addHandlers = () => {
   $('#create-comment').on('submit', onCreateComment);
   $('.container').on('click', '#delete-comment', onDeleteComment);
   $('.container').on('click', '#get-single-comment', onGetSingleComment);
-  // $('.container').on('click', '#confirm-edit', getSingleComment);
   $('#edit-comment').on('submit', onEditComment);
 };
 

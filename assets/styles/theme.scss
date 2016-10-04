@@ -1,6 +1,5 @@
-
 .entry-screen {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -16,77 +15,6 @@ header {
 
 .log-in {
   text-align: center;
-}
-
-.container {
-  margin: 20px auto;
-  text-align: center;
-  // border: 1px solid $light-grey;
-  // background-color: $white;
-  // width: 300px;
-  // height:300px;
-}
-
-.user-page {
-  display: none;
-}
-
-.edit-comment-page {
-  display: none;
-}
-
-.comment-module {
-  text-align: right;
-  width: 500px;
-  display: block;
-  margin: 2em auto;
-}
-
-.comment {
-  background-color: $white;
-  height: 100px;
-  padding: 1px;
-  border: 1px solid $light-grey;
-  margin: 5px auto;
-}
-
-#create-comment {
-  width: 500px;
-  margin: 20px auto;
-  text-align: right;
-}
-
-#edit-comment {
-  width: 500px;
-  margin: 20px auto;
-  text-align: right;
-}
-
-.comment-input {
-  background-color: $white;
-  width: 500px;
-  display: block;
-  padding: 3px;
-  border: 1px solid $light-grey;
-  text-align: left;
-}
-
-.comment-trip-id {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid $light-grey;
-  margin-top: 1em;
-  margin-right: .5em;
-  width: 100px;
-}
-
-.comment-add-margin {
-  margin-top: 1em;
-}
-
-.single-trip-page {
-  display: none;
 }
 
 .change-password {
@@ -111,52 +39,131 @@ header {
   margin: 30px auto;
 }
 
-.trip {
-  background-color: $white;
-  text-align: left;
-  float: left;
-  margin: 2em;
-  padding: 3em;
-  border: .5px $light-grey solid;
+.container {
+  margin: 20px auto;
 }
 
-#trip {
-  margin: 20px auto;
-  text-align: center;
-  background-color: blue;
+.user-page {
+  display: none;
 }
+
+.edit-comment-page {
+  display: none;
+  margin: 2em auto 5.5em;
+  text-align: left;
+  width: 500px;
+}
+
+.comment-module {
+  width: 500px;
+  display: block;
+  margin: 2em auto;
+  text-align: right;
+}
+
+.original-post {
+  color: $light-grey;
+  width: 500px;
+  text-align: left;
+  margin: 2em auto;
+}
+
+.comment-to-edit {
+  width: 500px;
+  display: block;
+  color: $light-grey;
+  border: 1px solid $light-grey;
+}
+
+.comment {
+  background-color: $white;
+  height: 100px;
+  border: 1px solid $light-grey;
+  margin: 5px auto;
+}
+
+#create-comment {
+  width: 500px;
+  height: 100px;
+  margin: 20px auto;
+  text-align: right;
+}
+
+#edit-comment {
+  width: 500px;
+  height: 100px;
+  margin: 20px auto;
+  text-align: right;
+}
+
+.comment-input {
+  background-color: $white;
+  width: 500px;
+  height: 100px;
+  display: block;
+  padding: 3px;
+  border: 1px solid $light-grey;
+  text-align: left;
+}
+
+.comment-trip-id {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $light-grey;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  width: 100px;
+}
+
+.comment-add-margin {
+  margin-top: 1em;
+}
+
+.single-trip-page {
+  display: none;
+  margin: 2em auto 5.5em;
+  text-align: left;
+  width: 500px;
+}
+
+.trip-page {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.trips-wrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.trip {
+  float: left;
+  text-align: left;
+  margin: 1em;
+}
+
+.trip-label {
+  padding-top: 10px;
+}
+
+.trip-info {
+  text-align: left;
+}
+// .season-filter {
+//   margin-top: 0;
+// }
+//
+// .type-filter {
+//   margin-top: 0;
+// }
 
 footer {
   text-align: center;
   margin: 3em 0;
 }
-
-
-.submit-button {
-  background-color: $dark-grey;
-  border-radius: 0;
-  border: 0;
-}
-
-.submit-button:hover {
-  background-color: $medium-grey;
-}
-
-.btn-default {
-  border-radius: 0;
-}
-
-.modal-row {
-  margin: 15px auto;
-}
-
-.modal-content {
-  width: 600px;
-}
-//
-// .fixed {
-//   position: absolute;
-//   bottom: 40px;
-//   right: 0;
-//   left: 0;
+// .submit-button {
+//   background-color: $dark-grey;
+//   border-radius: 0;
+//   border: 0;
 // }

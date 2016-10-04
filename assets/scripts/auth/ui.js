@@ -13,9 +13,9 @@ const signUpSuccess = (data) => {
 const signInSuccess = (data) => {
   app.user = data.user;
   document.getElementById("sign-in-form").reset();
-  $('.entry-screen').toggle();
+  $('.entry-screen').hide();
   $('.user-info').html(loadUserInfo(data));
-  $('.user-page').toggle();
+  $('.user-page').show();
   $('.container').html("");
 
 };

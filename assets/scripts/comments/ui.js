@@ -13,23 +13,24 @@ const createCommentSuccess = (data) => {
 
 
 const getCommentsSuccess = (data) => {
-  console.log(data);
-  $('.container').html(loadComments(data));
+  let allComments = data;
+  $('.container').html(loadComments(allComments));
   $('.single-trip-page').hide();
+  $('.edit-comment-page').hide();
 };
 
 const getSingleCommentSuccess = (data) => {
-  console.log(data);
   $('.edit-comment-page').show();
   $('.container').html(loadSingleComment(data));
 };
 
-const updateCommentSuccess = (data) => {
-  console.log(data);
+const updateCommentSuccess = () => {
+  $('.edit-comment-page').hide();
+  $('.container').html("");
 };
 
 const deleteCommentSuccess = () => {
-  console.log("DELETE SUCCESS");
+  $('.container').html("");
 };
 
 const failure = (error) => {

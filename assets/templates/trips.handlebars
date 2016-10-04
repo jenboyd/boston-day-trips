@@ -1,8 +1,8 @@
-
-{{#each trips}}
-  <li class="trip" data-id={{id}}>
-    <h4>{{name}}</h4>
-    <p>"{{location}}"</p>
-    <p>"{{url}}"</p>
-  </li>
-{{/each}}
+<div class="trips-wrapper">
+  {{#each trips}}
+    <span class="trip" data-id={{id}}>
+      <img src={{photo}} alt="trip photo"/>
+      <p class="trip-label">{{name}}</p>
+    </span>
+  {{/each}}
+</div>
