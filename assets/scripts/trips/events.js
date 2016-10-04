@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const getFormFields = require('../../../lib/get-form-fields');
 const api = require('./api');
@@ -11,8 +11,18 @@ const onGetTrips = function (event) {
     .fail (ui.failure);
 };
 
+const onGetSingleTrip = function (event) {
+  event.preventDefault();
+  let tripId = $(this).data('id');
+  api.getSingleTrip(tripId)
+    .done (ui.getSingleTripSuccess)
+    .fail (ui.failure);
+};
+
 const addHandlers = () => {
   $('#find-trip').on('click', onGetTrips);
+  $('.container').on('click', '.trip', onGetSingleTrip);
+
 };
 
 module.exports = {

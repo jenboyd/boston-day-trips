@@ -7,6 +7,7 @@ const loadSingleComment = require ('../../templates/edit-comment.handlebars');
 
 const createCommentSuccess = (data) => {
   app.comment = data.comment;
+  document.getElementById("create-comment").reset();
   console.log(data);
 };
 

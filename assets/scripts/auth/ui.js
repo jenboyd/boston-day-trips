@@ -6,11 +6,13 @@ const loadUserInfo = require ('../../templates/user-info.handlebars');
 
 const signUpSuccess = (data) => {
   app.user = data.user;
+  document.getElementById("sign-up-form").reset();
+
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  console.log(data);
+  document.getElementById("sign-in-form").reset();
   $('.entry-screen').toggle();
   $('.user-info').html(loadUserInfo(data));
   $('.user-page').toggle();
@@ -36,4 +38,5 @@ module.exports = {
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess,
+  failure,
 };
