@@ -11,7 +11,6 @@ const createCommentSuccess = (data) => {
   console.log(data);
 };
 
-
 const getCommentsSuccess = (data) => {
   let allComments = data;
   $('.container').html(loadComments(allComments));
@@ -25,6 +24,7 @@ const getSingleCommentSuccess = (data) => {
 };
 
 const updateCommentSuccess = () => {
+  document.getElementById("edit-comment").reset();
   $('.edit-comment-page').hide();
   $('.container').html("");
 };

@@ -10,7 +10,7 @@ const createComment = function(data) {
       Authorization: 'Token token=' + app.user.token,
     },
     method: 'POST',
-    data: data,
+    data : data,
   });
 };
 

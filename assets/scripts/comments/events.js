@@ -8,6 +8,8 @@ const ui = require('./ui');
 
 const onCreateComment = function (event) {
   event.preventDefault();
+  let tripId = $('#trip-page').data('id');
+  $("#tripIdCommentCreate").val(tripId);
   let data = getFormFields(event.target);
   api.createComment(data)
     .done (ui.createCommentSuccess)
@@ -39,6 +41,8 @@ const onGetSingleComment = function (event) {
 
 const onEditComment = function (event) {
   event.preventDefault();
+  let tripId = $('#comment-trip-id').data('id');
+  $("#tripIdCommentEdit").val(tripId);
   let data = getFormFields(event.target);
   api.updateComment(data)
     .done (ui.updateCommentSuccess)

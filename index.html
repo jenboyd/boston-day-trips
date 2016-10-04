@@ -57,10 +57,9 @@
           <p>Change your comment here:</p>
           <form id="edit-comment">
             <fieldset>
-              <input type="text" class="comment-input" name="comment[comments]"
-                    placeholder="type here">
-              <input type="text" class="comment-trip-id" name="comment[trip_id]"
-                    placeholder="Trip ID">
+              <input type="text" class="comment-input" name="comment[comments]">
+              <input type="hidden" id="tripIdCommentEdit" name="comment[trip_id]" value="wrong">
+
               <input type="submit" class="add-margin" name="submit" value="Submit">
             </fieldset>
           </form>
@@ -71,8 +70,8 @@
             <fieldset>
               <input type="text" class="comment-input" name="comment[comments]"
                     placeholder="Enter your comment">
-              <input type="text" class="comment-trip-id" name="comment[trip_id]"
-                    placeholder="Trip ID">
+              <input type="hidden" id="tripIdCommentCreate" name="comment[trip_id]" value="wrong">
+
               <input type="submit" class="add-margin" name="submit" value="Submit">
             </fieldset>
           </form>

@@ -1,11 +1,13 @@
 
   {{#each comments}}
     <div class="comment-module">
+      <div class="text-align-left">
+        <h4>{{trip.name}}</h4>
         <div class="comment" data-id={{id}}>
-          <h4>{{trip.name}}</h4>
           <p>{{user.email}} says:</p>
           <p>"{{comments}}"</p>
         </div>
+      </div>
         <button type="click" class:"block" id="delete-comment" data-id={{id}}>X</button>
         <button type="click" class:"block" id="get-single-comment" data-id={{id}}>edit</button>
     </div>
