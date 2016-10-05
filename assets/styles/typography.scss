@@ -1,6 +1,20 @@
-
 body {
   font-size: 16px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 5em;
+  color: $header;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  color: $red;
 }
 
 .user-page {
@@ -16,34 +30,59 @@ body {
   text-align: left;
 }
 
+.trip-label {
+  color: $medium-grey;
+  font-size: 0.8em;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 .spring {
   margin-right: 1em;
+  color: $spring;
+  font-style: italic;
 }
 
 .summer {
   margin-right: 1em;
+  color: $summer;
+  font-style: italic;
 }
 
 .fall {
   margin-right: 1em;
+  color: $fall;
+  font-style: italic;
 }
 
 .winter {
   margin-right: 1em;
+  color: $winter;
+  font-style: italic;
 }
 
 .artsy {
   margin-right: 1em;
+  color: $artsy;
+  font-style: italic;
 }
 
 .boozy {
   margin-right: 1em;
+  color: $boozy;
+  font-style: italic;
 }
 
 .foodie {
   margin-right: 1em;
+  color: $foodie;
+  font-style: italic;
 }
 
 .outdoorsy {
   margin-right: 1em;
+  color: $outdoorsy;
+  font-style: italic;
 }

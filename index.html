@@ -2,40 +2,39 @@
 <html>
     <head>
       <title>Boston Day Trips</title>
+      <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
       <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
       <div class="entry-screen">
-        <header>
-          <h1>Boston Day Trips</h1>
-        </header>
-        <section>
-          <div class="log-in">
-            <h3>Create an Account</h3>
-            <form id="sign-up-form">
-              <fieldset>
-                <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
-                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
-                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Confirm password">
-                <input type="submit" class="log-in-format" name="submit" value="Submit">
-              </fieldset>
-            </form>
-            <h3>Have an account, Sign in</h3>
-            <form id="sign-in-form">
-              <fieldset>
-                <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
-                <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
-                <input type="submit" class="log-in-format" name="submit" value="Submit">
-              </fieldset>
-            </form>
-          </div>
-        </section>
-        <footer>
-          <p>
-            Made as General Assembly's WDI Full Stack App Project
-          </p>
-        </footer>
+          <header>
+            <h1>Boston Day Trips</h1>
+          </header>
+          <section>
+            <div class="log-in">
+              <h3>Create an Account</h3>
+              <form id="sign-up-form">
+                <fieldset>
+                  <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
+                  <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
+                  <input type="password" class="log-in-format" name="credentials[password]" placeholder="Confirm password">
+                  <input type="submit" class="log-in-format" name="submit" value="Submit">
+                </fieldset>
+              </form>
+              <h3>Sign in</h3>
+              <form id="sign-in-form">
+                <fieldset>
+                  <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
+                  <input type="password" class="log-in-format" name="credentials[password]" placeholder="Enter your password">
+                  <input type="submit" class="log-in-format" name="submit" value="Submit">
+                </fieldset>
+              </form>
+            </div>
+          </section>
       </div>
 
       <div class="user-page">
@@ -43,14 +42,27 @@
           <div class="user-info">
           <!-- Handlebars templates -->
           </div>
-          <button type="submit" class="nav-buttons" id="log-out">LOG OUT</button>
         </div>
         <div class="user-header">
           <h2>Boston Day Trips</h2>
         </div>
+        <button type="submit" class="nav-buttons" id="find-trip">FIND A TRIP</button>
+        <button type="submit" class="nav-buttons" id="my-comments">TRIP COMMENTS</button>
+        <button type="submit" class="nav-buttons" id="change-pwd">CHANGE PASSWORD</button>
+        <button type="submit" class="nav-buttons" id="log-out">LOG OUT</button>
+        <div class="change-password">
+          <form id="change-pwd-form">
+            <fieldset>
+              <input type="password" class="change-pwd-format" name="passwords[old]" placeholder="old password">
+              <input type="password" class="change-pwd-format" name="passwords[new]" placeholder="new password">
+              <input type="submit" class="change-pwd-format" name="submit" value="Submit">
+            </fieldset>
+          </form>
+
+        </div>
 
         <div class="container">
-          <!-- Handlebars templates -->
+            <!--handlebars data inserted here-->
         </div>
 
         <div class="edit-comment-page">
@@ -76,21 +88,6 @@
             </fieldset>
           </form>
         </div>
-
-        <button type="submit" id="find-trip">FIND A TRIP</button>
-        <button type="submit" id="my-comments">TRIP COMMENTS</button>
-        <button type="submit" id="change-pwd">CHANGE PASSWORD</button>
-
-        <div class="change-password">
-          <form id="change-pwd-form">
-            <fieldset>
-              <input type="password" class="change-pwd-format" name="passwords[old]" placeholder="Enter your old password">
-              <input type="password" class="change-pwd-format" name="passwords[new]" placeholder="Enter your new password">
-              <input type="submit" class="change-pwd-format" name="submit" value="Submit">
-            </fieldset>
-          </form>
-        </div>
-
       </div>
     </body>
 </html>

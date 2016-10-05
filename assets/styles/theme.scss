@@ -1,11 +1,20 @@
 .entry-screen {
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('../entry-screen.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-height: auto;
+  padding: 20px 0;
+}
+
+.red {
+  color: $red;
 }
 
 header {
   text-align: center;
-  margin: 3em;
 }
 
 .user-nav {
@@ -15,6 +24,10 @@ header {
 
 .log-in {
   text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: $white;
 }
 
 .change-password {
@@ -41,10 +54,12 @@ header {
 
 .container {
   margin: 20px auto;
+  background-color: $white;
 }
 
 .user-page {
   display: none;
+  background-color: $white;
 }
 
 .edit-comment-page {
@@ -52,6 +67,7 @@ header {
   margin: 2em auto 5.5em;
   text-align: left;
   width: 500px;
+  background-color: $white;
 }
 
 .comment-module {
@@ -76,7 +92,7 @@ header {
 }
 
 .comment {
-  background-color: $white;
+  padding: 10px;
   height: 100px;
   border: 1px solid $light-grey;
   margin: 5px auto;
@@ -125,6 +141,7 @@ header {
   margin: 2em auto 5.5em;
   text-align: left;
   width: 500px;
+  background-color: $white;
 }
 
 #trip-page {
@@ -133,14 +150,14 @@ header {
 }
 
 .trips-wrapper {
-  width: 65%;
+  width: 660px;
   margin: 0 auto;
 }
 
 .trip {
   float: left;
   text-align: left;
-  margin: 1em;
+  margin: 10px;
 }
 
 .trip-label {
@@ -151,13 +168,18 @@ header {
   text-align: left;
 }
 
-
 footer {
   text-align: center;
   margin: 3em 0;
 }
-// .submit-button {
-//   background-color: $dark-grey;
-//   border-radius: 0;
-//   border: 0;
-// }
+
+.nav-buttons {
+  margin: 1em 5px;
+  border-radius: 0;
+  border: 0;
+  background-color: $white;
+}
+
+.add-margin {
+  margin-top: 10px;
+}
