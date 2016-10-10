@@ -8,7 +8,9 @@
           <p>"{{comments}}"</p>
         </div>
       </div>
+      {{#if editable}}
         <button type="click" class:"block" id="delete-comment" data-id={{id}}>X</button>
         <button type="click" class:"block" id="get-single-comment" data-id={{id}}>edit</button>
+      {{/if}}
     </div>
   {{/each}}

@@ -4,8 +4,6 @@ const getFormFields = require('../../../lib/get-form-fields');
 const api = require('./api');
 const ui = require('./ui');
 
-
-
 const onCreateComment = function (event) {
   event.preventDefault();
   let tripId = $('#trip-page').data('id');
