@@ -2039,11 +2039,17 @@ webpackJsonp([0],[
 	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.email : stack1), depth0))
 	    + " says:</p>\n          <p>\""
 	    + alias2(((helper = (helper = helpers.comments || (depth0 != null ? depth0.comments : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"comments","hash":{},"data":data}) : helper)))
-	    + "\"</p>\n        </div>\n      </div>\n        <button type=\"click\" class:\"block\" id=\"delete-comment\" data-id="
-	    + alias2(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"id","hash":{},"data":data}) : helper)))
+	    + "\"</p>\n        </div>\n      </div>\n"
+	    + ((stack1 = helpers["if"].call(alias3,(depth0 != null ? depth0.editable : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+	    + "    </div>\n";
+	},"2":function(container,depth0,helpers,partials,data) {
+	    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+	  return "        <button type=\"click\" class:\"block\" id=\"delete-comment\" data-id="
+	    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
 	    + ">X</button>\n        <button type=\"click\" class:\"block\" id=\"get-single-comment\" data-id="
-	    + alias2(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"id","hash":{},"data":data}) : helper)))
-	    + ">edit</button>\n    </div>\n";
+	    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+	    + ">edit</button>\n";
 	},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
 	    var stack1;
 
