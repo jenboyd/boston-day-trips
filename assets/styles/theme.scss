@@ -10,6 +10,12 @@
   color: $red;
 }
 
+.email {
+  color: $red;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
 header {
   text-align: center;
 }
@@ -28,8 +34,20 @@ header {
   font-size: 12px;
 }
 
+.comment-text {
+  font-size: 16px;
+}
+
 .change-password {
   display: none;
+}
+
+.log-in-note {
+  margin: 15px 0;
+  padding: 0px 20px;
+  font-size: 16px;
+  color: $medium-grey;
+
 }
 
 .log-in-format {
@@ -94,10 +112,11 @@ header {
 }
 
 .comment {
-  padding: 10px;
-  height: 100px;
-  border: 1px solid $light-grey;
-  margin: 5px auto;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid #b8b8b8;
+    margin: 5px auto;
+    overflow: hidden;
 }
 
 #create-comment {

@@ -6,6 +6,7 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
       <!-- <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script> -->
       <script src="dependencies.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
@@ -17,6 +18,7 @@
           </header>
           <section>
             <div class="log-in">
+              <p class="log-in-note">For adventure seekers in the Boston area! Create an account and see what people are chatting about</p>
               <h3>Create an Account</h3>
               <form id="sign-up-form">
                 <fieldset>
@@ -26,7 +28,7 @@
                   <input type="submit" class="log-in-format" name="submit" value="Submit">
                 </fieldset>
               </form>
-              <h3>Sign in</h3>
+              <h3>Have an account? Log in</h3>
               <form id="sign-in-form">
                 <fieldset>
                   <input type="email" class="log-in-format" name="credentials[email]" placeholder="Enter your email">
@@ -47,8 +49,8 @@
         <div class="user-header">
           <h2>Boston Day Trips</h2>
         </div>
-        <button type="submit" class="nav-buttons" id="find-trip">FIND A TRIP</button>
-        <button type="submit" class="nav-buttons" id="my-comments">TRIP COMMENTS</button>
+        <button type="submit" class="nav-buttons" id="find-trip">TRIPS</button>
+        <button type="submit" class="nav-buttons" id="my-comments">TALK</button>
         <button type="submit" class="nav-buttons" id="change-pwd">CHANGE PASSWORD</button>
         <button type="submit" class="nav-buttons" id="log-out">LOG OUT</button>
         <div class="change-password">
@@ -70,7 +72,9 @@
           <p>Change your comment here:</p>
           <form id="edit-comment">
             <fieldset>
-              <input type="text" class="comment-input" name="comment[comments]">
+              <!-- <input type="text" class="comment-input" name="comment[comments]"> -->
+              <textarea name="Text1" cols="1" rows="3"></textarea>
+
               <input type="hidden" id="tripIdCommentEdit" name="comment[trip_id]" value="wrong">
 
               <input type="submit" class="add-margin" name="submit" value="Submit">
@@ -81,8 +85,7 @@
         <div class="single-trip-page">
           <form id="create-comment">
             <fieldset>
-              <input type="text" class="comment-input" name="comment[comments]"
-                    placeholder="Enter your comment">
+              <textarea name="comment[comments]" cols="60" maxlength="200" rows="6" placeholder="Enter your comment"></textarea>
               <input type="hidden" id="tripIdCommentCreate" name="comment[trip_id]" value="wrong">
 
               <input type="submit" class="add-margin" name="submit" value="Submit">
