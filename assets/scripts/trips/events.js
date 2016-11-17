@@ -22,7 +22,6 @@ const onGetSingleTrip = function (event) {
 const addHandlers = () => {
   $('#find-trip').on('click', onGetTrips);
   $('.container').on('click', '.trip', onGetSingleTrip);
-
 };
 
 module.exports = {

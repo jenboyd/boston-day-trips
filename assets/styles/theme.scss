@@ -1,12 +1,9 @@
 .entry-screen {
   width: 100%;
   height: 100%;
-  background-image: url('../entry-screen.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-height: auto;
-  padding: 20px 0;
+  padding: 30px 0 200px 0;
+  background: url('../road2.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .red {
@@ -24,10 +21,11 @@ header {
 
 .log-in {
   text-align: center;
-  width: 30%;
+  width: 300px;
   margin: 0 auto;
   padding-top: 10px;
   background-color: $white;
+  font-size: 12px;
 }
 
 .change-password {
@@ -39,8 +37,12 @@ header {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid $light-grey;
-  margin: 30px auto;
+  margin: 20px auto;
   display: block;
+}
+
+.log-in-format > input {
+  background-color: $red;
 }
 
 .change-pwd-format {
