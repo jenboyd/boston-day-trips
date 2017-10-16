@@ -1,9 +1,10 @@
 .entry-screen {
-  width: 100%;
-  height: 100%;
-  padding: 30px 0 200px 0;
-  background: url('../road2.jpg') no-repeat center center fixed;
-  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 .red {
@@ -27,11 +28,15 @@ header {
 
 .log-in {
   text-align: center;
-  width: 300px;
+  width: 450px;
   margin: 0 auto;
-  padding-top: 10px;
-  background-color: $white;
-  font-size: 12px;
+  padding: 40px 30px;
+  background: $white-transparent;
+  font-size: 14px;
+  border-radius: 3px;
+  h3 {
+    font-size: 14px;
+  }
 }
 
 .comment-text {
@@ -43,11 +48,9 @@ header {
 }
 
 .log-in-note {
-  margin: 15px 0;
-  padding: 0px 20px;
+  margin-bottom: 20px;
   font-size: 16px;
   color: $medium-grey;
-
 }
 
 .log-in-format {
@@ -56,11 +59,8 @@ header {
   border-right: none;
   border-bottom: 1px solid $light-grey;
   margin: 20px auto;
+  width: 200px;
   display: block;
-}
-
-.log-in-format > input {
-  background-color: $red;
 }
 
 .change-pwd-format {
