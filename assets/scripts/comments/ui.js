@@ -8,7 +8,6 @@ const loadSingleComment = require ('../../templates/edit-comment.handlebars');
 const createCommentSuccess = (data) => {
   app.comment = data.comment;
   document.getElementById("create-comment").reset();
-  console.log(data);
 };
 
 const getCommentsSuccess = (data) => {
@@ -33,9 +32,6 @@ const deleteCommentSuccess = () => {
   $('.container').html("");
 };
 
-const failure = (error) => {
-};
-
 
 module.exports = {
   createCommentSuccess,
@@ -43,5 +39,4 @@ module.exports = {
   getSingleCommentSuccess,
   updateCommentSuccess,
   deleteCommentSuccess,
-  failure,
 };

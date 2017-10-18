@@ -1,9 +1,8 @@
 <div id="trip-page" data-id={{trip.id}}>
-  <img src="{{trip.description}}" alt="trip-photo" />
+  <img src="{{trip.photo}}" alt="trip-photo" />
   <div class="trip-info">
     <h3>{{trip.name}}</h3>
-    <p>{{trip.location}}</p>
-    <p>{{trip.dist_from_bos}}min. from Boston</p>
+    <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{trip.location}}</p>
     <div class="filters">
       {{#if trip.spring}}
         <span class="spring">spring</span>
@@ -29,6 +28,19 @@
       {{#if trip.outdoorsy}}
         <span class="outdoorsy">outdoorsy</span>
       {{/if}}
-  </div>
+    </div>
+    <div>
+      {{#each trip.comments}}
+        <div class="comment-module">
+          <div class="text-align-left">
+            <div class="comment" data-id={{id}}>
+              <!-- <p class"add-padding">{{user.email}} says:</p> -->
+              <p class="comment-text">"{{comments}}"</p>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+
+    </div>
   </div>
 </div>
