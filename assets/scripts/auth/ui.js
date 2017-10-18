@@ -2,7 +2,7 @@
 
 const app = require ('../app');
 const loadUserInfo = require ('../../templates/user-info.handlebars');
-
+const tripEvents = require('../trips/events.js');
 
 const signUpSuccess = (data) => {
   app.user = data.user;
@@ -17,7 +17,7 @@ const signInSuccess = (data) => {
   $('.user-info').html(loadUserInfo(data));
   $('.user-page').show();
   $('.container').html("");
-
+  tripEvents.onGetTrips();
 };
 
 const signOutSuccess = () => {
@@ -29,14 +29,9 @@ const changePasswordSuccess = () => {
 
 };
 
-const failure = (error) => {
-};
-
-
 module.exports = {
   signUpSuccess,
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess,
-  failure,
 };

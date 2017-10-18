@@ -5,8 +5,8 @@ const api = require('./api');
 const ui = require('./ui');
 
 const onGetTrips = function (event) {
-  event.preventDefault();
-  api.getTrips(event)
+  if (event) { event.preventDefault() }
+  api.getTrips()
     .done (ui.getTripsSuccess)
     .fail (ui.failure);
 };
@@ -26,4 +26,5 @@ const addHandlers = () => {
 
 module.exports = {
   addHandlers,
+  onGetTrips,
 };
